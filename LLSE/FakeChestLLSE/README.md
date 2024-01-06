@@ -1,3 +1,7 @@
+---
+layout: inline
+---
+
 lib
 
 ```js annotate

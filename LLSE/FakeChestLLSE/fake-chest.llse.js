@@ -15,18 +15,7 @@ ll.registerPlugin(
         author: plugin.author
     });
 (function showLogo() {
-    let clr = (c, s = '$1') => `\x1b[${c}m${s}\x1b[0m`;// LiteLoader-AIDS automatic generated
-    /// <reference path="d:\software\BDS\llse/dts/HelperLib-master/src/index.d.ts"/> 
-    
-    ll.registerPlugin(
-        /* name */ "",
-        /* introduction */ "",
-        /* version */ [0,0,1],
-        /* otherInformation */ null
-    ); 
-    
-    
-    
+    let clr = (c, s = '$1') => `\x1b[${c}m${s}\x1b[0m`;
     let log = (s) => logger.info(`\r${s}`.replace(/([\\\|_/<])/g, clr('5;33;40')).replaceAll('$', clr('7;33;40', '#')));
     let sub = (s) => logger.info(`\r${s}`.padEnd(91, ' ').replace(/([\|_]| \. )/g, clr('32;40')).replace(/(v.+)/, clr(45)).replace(/(@.+)/, clr(44)));
     logger.setTitle('');
